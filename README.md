@@ -5,11 +5,10 @@
 ## Table of Contents
   * [Description](#description)
   * [Usage](#usage)
-  * [Installation](#installation)
-  * [Testing](#testing)
   * [License](#license)
-  * [Credits](#credits)
+  <!-- * [Credits](#credits) -->
   * [Demo Video](#demo)
+  * [Deployed App](#deployed-app)
   * [Contributing to This Repo](#contributing-to-this-repo)
   * [Questions / Contact Details](#questions-/-contact-details)
 
@@ -21,21 +20,11 @@ Create an application that can be used to write, save, and delete notes. This ap
 ---
 
 ## Usage
- [] AS A user, I want to be able to write and save notes
+ [x] AS A user, I want to be able to write and save notes
 
- [] I WANT to be able to delete notes I've written before
+ [x] I WANT to be able to delete notes I've written before
 
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
----
-
-## Installation
-npm i
-
----
-
-## Testing
-npm test
 
 ---
 
@@ -44,16 +33,16 @@ The application is covered under a MIT license.
 
 ---
 
-## Credits
-Background image is a free to use image that was obtained from [Pexels.com](https://www.pexels.com/).
+## Demo Video
+A video demonstration of this application can be found [here](https://youtu.be/RvhQbaUtbQ8).
+Click the image to launch the video.
+
+[![Screeshot](Screenshot.jpg)](https://www.youtube.com/watch?v=RvhQbaUtbQ8 "Demo")
 
 ---
 
-## Demo Video
-A video demonstration of this application can be found [here](https://youtu.be/XwDZOvQD080).
-Click the image to launch the video.
-
-[![Screeshot](Screenshot.jpg)](https://www.youtube.com/watch?v=XwDZOvQD080 "Demo")
+## Deployed Application
+This app is deployed on [Heroku](https://dashboard.heroku.com/) at [desolate-brushlands-10671](https://desolate-brushlands-10671.herokuapp.com/)
 
 ---
 
