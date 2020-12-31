@@ -2,32 +2,44 @@ const fs = require('fs');
 const uuid = require('uuid');
 const path = require('path');
 
-module.exports = function (app) {
-    let notes = require('../db/db.json');
-    
+module.exports = function (app) {    
     // API to send the db.json file on GET request from notes.html   
     app.get('/api/notes', function (req, res) {
-        res.sendFile(path.join(__dirname, '../db/db.json'));
+        fs.readFile('../db/db.json', 'utf8', function (err, log) {
+            const noteList = JSON.parse(log)|| [];
+            res.json(noteList);
+        });
     });
     
     // API to post to db.json file on POST request from notes.html
     app.post('/api/notes', function (req, res) {
-    const newNote = JSON.parse(fs.readFileSync('../db/db.json'));
-
-    data = req.body;
-    data.id = uuid.v4();
-    newNote.push(data);
-    fs.writeFileSync('../db/db.json', JSON.stringify(newNote));
-    
-    res.json(true);
+        fs.readFile('../db/db.json', 'utf8', function (err, log) {
+            const addNote = JSON.parse(log) || [];
+            const newNote = req.body;
+            
+            newNote.id = uuid();
+            addNote.push(newNote);
+            
+            fs.writeFile('../db/db.json', JSON.stringify(db2), function (err) {
+                if (err) throw err;
+                res.json(addNote);
+            });
+        });
     });
     
     // API to delete from db.json on DELETE request from notes.html
     app.delete('/api/notes/:id', function (req, res) {
-        const oldNote = JSON.parse(fs.readFileSync('../db/db.json'));
-        const deleteNote = oldNote.filter((noteDelete) => noteDelete.id !== req.params.id);
-
-        fs.writeFileSync('../db/db.json', JSON.stringify(deleteNote));
-        res.json(deleteNote);
+        const id = req.params.id;
+        
+        fs.readFile('../db/db.json', 'utf8', function (err, log) {
+            const noteList = JSON.parse(log);
+            const filteredNotes = noteList.filter((note) => note.id !== id);
+            
+            fs.writeFile('db/db.json', JSON.stringify(filteredNotes), function (err) {
+                if (err) throw err;
+                
+                res.json(filteredNotes);
+            });
+        });
     });
-}
+};
