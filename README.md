@@ -38,12 +38,6 @@ A video demonstration of this application can be found [here](https://youtu.be/R
 Click the image to launch the video.
 
 [![Screeshot](Screenshot.jpg)](https://www.youtube.com/watch?v=RvhQbaUtbQ8 "Demo")
-
----
-
-## Deployed Application
-This app is deployed on [Heroku](https://dashboard.heroku.com/) at [desolate-brushlands-10671](https://desolate-brushlands-10671.herokuapp.com/)
-
 ---
 
 ## Contributing to This Repo
@@ -54,4 +48,4 @@ Please Contact me.
 ## Questions / Contact Details
 This app can be found on my Github page at [TreeGee73](https://github.com/TreeGee73).
 
-If you have any questions or need to contact me about this app, I can reached either on Github or by email at [treegee73@gmail.com](treegee73@gmail.com).
+If you have any questions or need to contact me about this app, I can reached either on Github or by email.
