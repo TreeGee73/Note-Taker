@@ -6,7 +6,6 @@
   * [Description](#description)
   * [Usage](#usage)
   * [License](#license)
-  <!-- * [Credits](#credits) -->
   * [Demo Video](#demo)
   * [Deployed App](#deployed-app)
   * [Contributing to This Repo](#contributing-to-this-repo)
@@ -46,6 +45,4 @@ Please Contact me.
 ---
 
 ## Questions / Contact Details
-This app can be found on my Github page at [TreeGee73](https://github.com/TreeGee73).
-
-If you have any questions or need to contact me about this app, I can reached either on Github or by email.
+If you have any questions or need to contact me about this app, visit my GitHub page at [TreeGee73](https://github.com/TreeGee73).
